@@ -1,0 +1,86 @@
+// button colors
+$buttonColor: #0015f6; // New button color (orange)
+$buttonHover: #0015f6; // New hover color (lighter orange)
+$topButtonHover: #ffccbc; // New top button hover (light peach)
+
+// text colors light theme
+$titleColor: #1a237e; // Dark blue for titles
+$textColor: #424242; // Dark gray for text
+$subTitle: #757575; // Medium gray for subtitles
+$cardSubtitle: #616161; // Slightly darker gray for card subtitles
+$talkCardSubTitle: #9e9e9e; // Lighter gray for talk card subtitles
+$blogCardTitleColor: #263238; // Dark gray-blue for blog card titles
+
+// text color dark theme
+$textColorDark: #eeeeee; // Light gray for dark theme text
+
+// toggle switch colors
+$toggleCheck: #00e676; // Green for toggle check
+$toggleSwitchSliderBG: #37474f; // Dark gray for switch background
+
+// githubRepo specific colors
+$githubRepoCardLanguageColorBG: #29b6f6; // Light blue for language background
+$githubRepoCardColor: rgb(88, 96, 105); // Keep this unchanged
+$githubRepoCardRepoCardStatsColor: rgb(106, 115, 125); // Keep this unchanged
+$githubRepoCardRepoNameColor: #283593; // Dark indigo for repo name
+$githubProfileCardLocationTS: #ffebcd; // Keep this unchanged (light beige)
+$githubProfileCardBorder: #ba68c8; // Purple for card border
+
+// light background colors
+$lightBackground1: #fafafa; // Very light gray for backgrounds
+$lightBackground2: #ffffff; // White background
+$lightBackground3: #eceff1; // Light gray background
+$blogCardContainerColor: #546e7a; // Gray-blue for blog card container
+// dark background colors
+$darkBackground: #263238; // Dark gray-blue for dark backgrounds
+
+// light theme box shadows
+$lightBoxShadowDark: rgba(0, 0, 0, 0.2); // Keep this unchanged
+$lightBoxShadow: rgba(0, 0, 0, 0.1); // Keep this unchanged
+$lightBoxShadowDarker: rgba(0, 0, 0, 0.3); // Keep this unchanged
+
+// dark theme box shadows
+$darkBoxShadow: #b0bec5; // Light gray for dark theme shadow
+$darkBoxShadow2: #ffffff; // White shadow for dark theme
+
+// linear gradients
+$experienceCardBlurredDivLG: linear-gradient(
+  rgba(0, 0, 0, 0.4),
+  rgba(0, 0, 0, 0.2)
+); // Keep this unchanged
+$experienceCardBannerLG: linear-gradient(
+  rgba(0, 0, 0, 0.7),
+  rgba(0, 0, 0, 0.5)
+); // Keep this unchanged
+
+// borders
+$progressBarBackground: rgb(243, 239, 239); // Keep this unchanged
+$lightBorder1: rgba(211, 211, 211, 0.397); // Keep this unchanged
+$educationCardBorder: #a9a7f9; // Light purple for education card borders
+
+// hovers
+$achievementCertificateCardHoverDark: rgba(255, 255, 255, 0.2); // Keep this unchanged
+$blogCardHoverSmallColor: rgba(255, 255, 255, 0.8); // Keep this unchanged
+$headerHoverBG: #ffe082; // Light yellow for header hover
+$contactDetailHoverTS: #ffcc80; // Light orange for contact hover
+
+// misc backgrounds
+$progressBarSpanBG: #ffab91; // Light orange for progress bar
+$iconBackground: #455a64; // Dark gray-blue for icon background
+$appHeaderBG: #37474f; // Dark gray-blue for app header
+
+// misc colors
+$skillsColor: #ab47bc; // Bright purple for skills
+$appLink: #1de9b6; // Bright cyan for app links
+
+// social media icons
+$faceBook: #4267b2; // Keep Facebook blue
+$linkedin: #0077b5; // Keep LinkedIn blue
+$github: #000000; // Black for GitHub
+$gitlab: #f56f29; // Orange for GitLab
+$google: #db4437; // Red for Google
+$twitter: #1da1f2; // Keep Twitter blue
+$medium: #000000; // Black for Medium
+$stackoverflow: #f48024; // Keep StackOverflow orange
+$instagram: #e4405f; // Instagram pink-red
+$kaggle: #20beff; // Keep Kaggle blue

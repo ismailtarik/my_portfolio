@@ -1,0 +1,41 @@
+.splash-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black; /* Set the background color to black */
+  color: white; /* Text color is white for contrast */
+  overflow: hidden;
+}
+
+.splash-content {
+  position: relative;
+  z-index: 2; /* Ensure the text appears above the background */
+  text-align: center;
+}
+
+.splash-title {
+  font-size: 5rem; /* Adjust size */
+  margin: 0; /* Remove margin */
+  color: white; /* Set title color to white for visibility */
+  animation: fadeIn 1s ease; /* Optional: add animation */
+}
+
+.splash-subtitle {
+  font-size: 2.5rem; /* Adjusted size for better hierarchy */
+  margin-top: 30px; /* Increased margin to create more space from the title */
+  color: white; /* Set subtitle color to white for visibility */
+  animation: fadeIn 1.5s ease; /* Optional: add animation */
+}
+
+/* Optional fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
