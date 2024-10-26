@@ -1,64 +1,86 @@
-@import "../../_globalColor";
+@import "../../_globalColor"; // Ensure this path is correct
 
 .skills-main-div {
   display: flex;
+  flex-direction: row; /* Ensure items are in a row */
   width: 100%;
+  max-width: 1200px; /* Set a maximum width for better layout control */
+  margin: auto; /* Center align */
+  align-items: center; /* Align items vertically center */
+  justify-content: space-between; /* Space out items */
+  padding: 50px; /* Add padding around the main div */
   overflow: hidden;
+  background-color: $mainBackground; /* Define a background color */
+  border-radius: 20px; /* Rounded corners for a smoother look */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .skills-text-div {
-  margin-left: 50px;
+  flex: 1; /* Allow the text div to grow */
+  margin-left: 30px; /* Space between image and text */
 }
 
-.skills-main-div > * {
-  flex: 1;
-  margin-bottom: 30px;
+.skills-image-div {
+  flex: 1; /* Allow the image div to grow */
+  display: flex; /* Center the image vertically */
+  justify-content: center; /* Center the image horizontally */
 }
 
 .skills-image-div > img {
-  max-width: 100%;
-  height: auto;
+  max-width: 400px; /* Prevent overflow */
+  width: 100%; /* Scale with parent */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .skills-heading {
-  font-size: 56px;
+  font-size: 48px; /* Adjusted for better visibility */
   font-weight: 400;
+  margin-bottom: 15px; /* Add space below the heading */
 }
+
 .subTitle {
   color: $subTitle;
+  margin-bottom: 15px; /* Add space below the subtitle */
+}
+
+.skills-list-container {
+  display: grid; /* Use grid for layout */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Create a responsive grid */
+  gap: 20px; /* Space between skill items */
+  margin-top: 30px; /* Add space above the skills list */
+}
+
+.skill-item {
+  padding: 10px; /* Add padding for better aesthetics */
+  background-color: $secondaryBackground; /* Ensure variable is defined in _globalColor */
+  border-radius: 10px; /* Rounded corners for each skill item */
+  text-align: center; /* Center text */
 }
 
 /* Media Query */
 @media (max-width: 1380px) {
   .skills-heading {
-    font-size: 40px;
+    font-size: 36px; /* Smaller font for mid-size screens */
   }
 }
+
 @media (max-width: 768px) {
   .skills-heading {
-    font-size: 30px;
-    text-align: center;
+    font-size: 28px; /* Further reduce font size for small screens */
+    text-align: center; /* Center text on smaller screens */
   }
-  .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
-  }
+
   .skills-main-div {
-    flex-direction: column;
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    padding: 20px; /* Reduce padding on smaller screens */
   }
+
   .skills-text-div {
-    margin-left: 0px;
-    margin: 20px;
+    margin: 20px; /* Center text div margin */
+    text-align: center; /* Center text on smaller screens */
   }
-  .skills-text {
-    font-size: 16px;
-  }
-  .skills-text-subtitle {
-    font-size: 16px;
-    text-align: center;
-  }
+
   .skills-image-div {
-    /* display: none; */
-    order: 2;
+    order: 1; /* Position image last in the stack */
   }
 }

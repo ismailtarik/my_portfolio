@@ -26,22 +26,24 @@ const greeting = {
     "A passionate Full Stack Software Developer with experience in building Web and Mobile applications using PHP, Laravel, JEE, Spring Boot, HTML, CSS, JavaScript, React.js, Express.js, Node.js and React Native."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true, // Set false to hide this section, defaults to true
+    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", 
+  displayGreeting: true,
   tools: [
     "Web Development: PHP, Laravel, JEE, Spring Boot, HTML, CSS, JavaScript, React.js, Express.js, Node.js",
     "Mobile Development: React Native",
     "Programming Languages: C, Java, Python",
     "Databases: SQL, PL/SQL, MongoDB",
     "Data Analysis: Machine Learning, Big Data, Python"
-  ]
+  ],
+  image: require("./assets/images/tarik_image_croped.jpeg")
 };
+
 
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/Tarikismail2",
+  github: "https://github.com/ismailtarik",
   linkedin: "https://www.linkedin.com/in/ismail-tarik-b1b07b248/",
   gmail: "tarikismail600@gmail.com",
   facebook: "https://www.facebook.com/tarik0631",
@@ -52,7 +54,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "FULL STACK DEVELOPER EXPLORING MULTIPLE TECHNOLOGIES AND TECH STACKS",
+  subTitle: "FULL STACK DEVELOPER EXPLORING MULTIPLE TECHNOLOGIES AND DATA ANALYTICS",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front-end / User Interfaces for web and mobile applications using HTML, CSS, JavaScript, React.js, and React Native"
@@ -178,7 +180,8 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-server"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true ,// Set false to hide this section, defaults to true
+  image: require("./assets/images/what_i_do.png")
 };
 
 // Education Section

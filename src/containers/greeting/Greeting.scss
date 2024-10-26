@@ -3,38 +3,26 @@
 .main {
   width: 90%;
   padding: 20px 10px;
-  margin: 0px auto;
+  margin: 0 auto;
   margin-top: 4rem;
 }
+
 .greet-main {
   width: 90%;
   padding: 20px 10px;
-  margin: 0px auto;
+  margin: 0 auto;
   margin-top: 2rem;
 }
 
 .greeting-main {
   display: flex;
+  align-items: center; /* Align items vertically centered */
+  justify-content: flex-start; /* Align items to the start */
+  gap: 20px; /* Add spacing between text and image */
 }
 
 .subTitle {
   color: $subTitle !important;
-}
-
-.greeting-main {
-  display: flex;
-}
-
-.greeting-main > * {
-  flex: 1;
-  margin-bottom: 30px;
-}
-.button-greeting-div {
-  display: flex;
-  margin-top: 20px;
-}
-.download-link-button {
-  text-decoration: none;
 }
 
 .greeting-text {
@@ -48,9 +36,27 @@
   line-height: 40px;
 }
 
-.greeting-image-div > img {
-  max-width: 100%;
-  height: auto;
+.button-greeting-div {
+  display: flex;
+  margin-top: 20px;
+}
+
+.download-link-button {
+  text-decoration: none;
+}
+
+/* Adjust the image size and alignment */
+.greeting-image-div {
+  display: flex;
+  align-items: center; /* Center image vertically */
+}
+
+.greeting-image-small img {
+  max-width: 400px; /* Set a fixed max width */
+  max-height: 400px; /* Set a fixed max height to maintain aspect ratio */
+  height: auto; /* Auto height to keep the aspect ratio */
+  margin-left: 20px; /* Add space between text and image */
+  border-radius: 20%; /* Adds rounded corners */
 }
 
 .wave-emoji {
@@ -62,7 +68,7 @@
 }
 
 @keyframes wave {
-  0% {
+  0%, 50%, 100% {
     transform: rotate(0deg);
   }
   10% {
@@ -77,15 +83,9 @@
   40% {
     transform: rotate(9deg);
   }
-  50% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
 }
 
-/* Media Query */
+/* Media Queries */
 @media (max-width: 1380px) {
   .greeting-text {
     font-size: 50px;
@@ -94,24 +94,11 @@
     font-size: 20px;
   }
 }
+
 @media (max-width: 768px) {
-  .button-greeting-div {
-    justify-content: space-around;
-  }
-  .greeting-text {
-    font-size: 30px;
-    text-align: center;
-  }
-  .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
-    text-align: center;
-  }
-  .greeting-main {
-    display: block;
-  }
-  .greeting-image-div {
-    height: 256px;
+  .greeting-image-small img {
+    width: 70px; /* Smaller width for mobile */
+    height: 70px; /* Adjust accordingly */
   }
 }
 
